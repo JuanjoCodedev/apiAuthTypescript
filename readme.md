@@ -36,7 +36,7 @@ En el proyecto encontraras llamado a las variables de entorno nombradas o defini
 
 - **TOKEN_KEY:** Aqui va la clave secreta de tu token.
 
-## Tecnologias utilizadas
+## **Tecnologias utilizadas**
 
 - :rocket: [Typescript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html).
 - :rocket: [NodeJS](https://nodejs.org/en/docs).
