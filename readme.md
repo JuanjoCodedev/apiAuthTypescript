@@ -10,11 +10,15 @@ TypeScript es un lenguaje de programación que se ha convertido en una de las pr
 
 La instalación del proyecto es muy sencilla solo debes de seguir cada uno de estos pasos:
 
-1. Clonar el proyecto apiAuthTypescript para ello debes ejecutar el comando git clone acompañado de la siguiente url: https://github.com/JuanjoCodedev/apiAuthTypescript.git
+1. Clonar el proyecto apiAuthTypescript para ello debes ejecutar el siguiente comando en su consola:
+
+   > git clone https://github.com/JuanjoCodedev/apiAuthTypescript.git
 
 2. Crear una base de datos en MongoDB.
 
 3. Configurar las variables de entorno del proyecto.
+
+> Es importante que ya tengas instalado en tu computadora git, sí no es asi visita el siguiente link: https://git-scm.com/downloads
 
 ## **Definiciones**
 
@@ -34,6 +38,6 @@ En el proyecto encontraras llamado a las variables de entorno nombradas o defini
 
 ## Tecnologias utilizadas
 
-- :rocket: Typescript.
-- :rocket: NodeJS.
-- :rocket: Express.
+- :rocket: [Typescript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html).
+- :rocket: [NodeJS](https://nodejs.org/en/docs).
+- :rocket: [Express](https://expressjs.com/es/starter/installing.html).
