@@ -1,0 +1,5 @@
+# node_modules file
+node_modules
+
+# dotenv environment variables file
+config.env
