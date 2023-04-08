@@ -43,4 +43,5 @@ En el proyecto encontraras llamado a las variables de entorno nombradas o defini
 - :rocket: [Express](https://expressjs.com/es/starter/installing.html).
 
 ## **Diagrama de clases**
-<img width="460" height="300" src="">
+
+<img width="100%" height="auto" src="https://github.com/JuanjoCodedev/apiAuthTypescript/blob/main/src/assets/img/diagcls.png?raw=true">
