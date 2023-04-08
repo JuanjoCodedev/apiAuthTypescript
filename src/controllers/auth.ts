@@ -21,10 +21,10 @@ async function createUser(req: Request, res: Response) {
       const token: string = jwt.sign({ id: savedUser._id }, process.env.TOKEN_KEY || "TOKEN_KEY");
       res.header("auth-token", token).json(savedUser);
     } catch (error) {
-      res.status(400).json({ error: { msg: "¡Este email ya se encuentra en nuestra bases de datos!" } });
+      res.status(500).json({ error: { msg: "¡Ha ocurrido un error inesperado!" } });
     }
   } else {
-    res.status(400).json({ error: { msg: "¡Este email ya se encuentra en nuestra bases de datos!" } });
+    res.status(400).json({ error: { msg: "¡Intenta con otro email!" } });
   }
 }
 
@@ -47,7 +47,7 @@ async function login(req: Request, res: Response) {
 
       res.header("auth-token", hash_token).json({ msg: "¡Usuario logeado!", user });
     } catch (error) {
-      res.status(401).json({ ok: false, error: { msg: "¡Credenciales invalidas!" } });
+      res.status(500).json({ ok: false, error: { msg: "¡Ha ocurrido un error inesperado!" } });
     }
   } else {
     res.status(401).json({ ok: false, error: { msg: "¡Credenciales invalidas!" } });

@@ -41,3 +41,6 @@ En el proyecto encontraras llamado a las variables de entorno nombradas o defini
 - :rocket: [Typescript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html).
 - :rocket: [NodeJS](https://nodejs.org/en/docs).
 - :rocket: [Express](https://expressjs.com/es/starter/installing.html).
+
+## **Diagrama de clases**
+<img width="460" height="300" src="">
