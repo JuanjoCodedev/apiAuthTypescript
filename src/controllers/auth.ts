@@ -58,13 +58,13 @@ async function profile(req: Request, res: Response) {
   const user = await User.findById(req.userId); // *se coloca password en 0 para que no devuelva la contraseña
 
   if (!user) {
-    res.status(400).json({ msg: "No user found" });
+    res.status(400).json({ msg: "Usuario no encontrado" });
   }
 
   try {
     res.status(200).json({ msg: user });
   } catch (error) {
-    res.status(500).json({ error: "Error, no user found" });
+    res.status(500).json({ error: "¡Ha ocurrido un error inesperado!" });
   }
 }
 
@@ -74,7 +74,7 @@ async function getUsers(_req: Request, res: Response) {
   try {
     res.status(200).json({ msg: user });
   } catch (error) {
-    res.status(500).json({ error: "You can't read users" });
+    res.status(500).json({ error: "¡Ha ocurrido un error inesperado!" });
   }
 }
 

@@ -6,6 +6,7 @@ export interface IUser extends Document {
   name: string;
   email: string;
   password: string;
+  rol: string;
   encryptPassword(password: string): Promise<string>;
   validatePassword(password: string): Promise<boolean>;
 }
@@ -33,6 +34,11 @@ const userSchema = new Schema(
     password: {
       type: String,
       required: true,
+    },
+
+    rol: {
+      type: String,
+      default: "ordinario",
     },
   },
 

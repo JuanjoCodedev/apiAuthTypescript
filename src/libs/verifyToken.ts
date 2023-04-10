@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
-import User from "../models/user";
+import User, { IUser } from "../models/user";
 import Token from "../models/token";
 
 interface IPayload {
@@ -33,4 +33,18 @@ export const tokenValidation = async (req: Request, res: Response, next: NextFun
   } else {
     res.status(500).json({ msg: "token invalid" });
   }
+};
+
+export const isAdmin = (req: Request, res: Response, next: NextFunction) => {
+  const { rol }: IUser = req.body;
+
+  if (rol === "ordinario") {
+    res.status(401).json({
+      ok: false,
+      error: {
+        message: "¡Acceso denegado! No tiene permiso de ingresar aqui",
+      },
+    });
+  }
+  next();
 };
